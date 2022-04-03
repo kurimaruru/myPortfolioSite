@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.about-me .slick-current{
+  animation: zoomIn 1s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+}
+
+.icon{
+  margin:0 auto;
+
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  30% {
+    transform: scale(0.5);
+    opacity: 25;
+  }
+  50%{
+    transform: scale(0.7);
+    opacity: 50;
+  }
+  70% {
+    transform: scale(0.9);
+    opacity: 75;
+  }
+  100% {
+    opacity: 100;
+    transform: scale(1);
+  }
+
+}
